@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context="com.pradeep.calibration.activities.MainActivity">
+
+
+    <TextureView
+        android:id="@+id/camera2_texture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/camera2_captures"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignBottom="@+id/camera2_preview" />
+    <ImageButton
+        android:id="@+id/btn_takepicture"
+        android:layout_width="62dp"
+        android:layout_height="63dp"
+        android:layout_gravity="top|right"
+        android:layout_marginBottom="17dp"
+        android:src="@mipmap/icon_rec"
+        android:text="Take pic"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp" />
+
+    <ImageView
+        android:id="@+id/camera2_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
